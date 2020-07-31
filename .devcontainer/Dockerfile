@@ -10,4 +10,5 @@ RUN apk add \
         less \
         iproute2 \
         procps \
-        iproute2
+        iproute2 \
+        mariadb-client
