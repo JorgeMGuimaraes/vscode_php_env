@@ -16,7 +16,8 @@
 	"extensions": [
 		"felixfbecker.php-debug",
 		"felixfbecker.php-intellisense",
-		"mtxr.sqltools"
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-mysql"
 	],
 
 	"workspaceFolder": "/workspace",
