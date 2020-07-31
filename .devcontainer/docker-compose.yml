@@ -9,9 +9,9 @@ services:
                 - ALPINE_VARIANT=3.12
         volumes:
             - ..:/workspace:cached
-        #ports:
+        ports:
             # For use with PHP (e.g. `php -S localhost:8080`)
-            #- "8080:8080"
+            - "8080:8080"
         command: sleep infinity
     mariadb:
         image: yobasystems/alpine-mariadb:10.4.13
