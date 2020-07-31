@@ -14,14 +14,18 @@ services:
             #- "8080:8080"
         command: sleep infinity
     mariadb:
-        image: mariadb:10.4
+        image: yobasystems/alpine-mariadb:10.4.13
         expose:
             # Expose mariadb port to php service (Access as hostname "mariadb" from within php container)
             - "3306"
         # Uncomment to allow access to mariadb from external tools
-        # ports:
-        #     - "3306:3306"
+        ports:
+             - "3306:3306"
         environment:
-            MYSQL_ROOT_PASSWORD: just-for-testing
-            MYSQL_DATABASE: VscodeDev
-
+            MYSQL_ROOT_PASSWORD: hguyFtgfR4r9R4r76
+            MYSQL_USER: jorge
+            MYSQL_PASSWORD: hguyFt6S95dgfR4ryb
+        volumes:
+            - ../mysql/mysql:/var/lib/mysql
+            - ../mysql/mysql-bin:/var/lib/mysql/mysql-bin
+        restart: always
