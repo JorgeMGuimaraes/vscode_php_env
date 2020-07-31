@@ -1,2 +1,5 @@
+# Image variants
+ARG PHP_VARIANT
+ARG ALPINE_VARIANT
 
-FROM php:7.4.8-cli-alpine3.12
+FROM php:${PHP_VARIANT}-cli-alpine${ALPINE_VARIANT}
