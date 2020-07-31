@@ -13,11 +13,11 @@
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
-	//"extensions": [
-	//	"felixfbecker.php-debug",
-	//	"felixfbecker.php-intellisense",
-	//	"mtxr.sqltools"
-	//],
+	"extensions": [
+		"felixfbecker.php-debug",
+		"felixfbecker.php-intellisense",
+		"mtxr.sqltools"
+	],
 
 	"workspaceFolder": "/workspace",
 
