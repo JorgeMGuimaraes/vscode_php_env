@@ -8,7 +8,7 @@ services:
                 - PHP_VARIANT=7.4.8
                 - ALPINE_VARIANT=3.12
         volumes:
-            - ../src:/workspace:cached
+            - ../src:/www:cached
         ports:
             # For use with PHP (e.g. `php -S localhost:8080`)
             - "8080:8080"
