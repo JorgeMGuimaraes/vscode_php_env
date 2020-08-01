@@ -31,5 +31,4 @@ services:
             # MYSQL_COLLATION: default collation (utf8_general_ci) for Mariadb
         volumes:
             - ../mysql/mysql:/var/lib/mysql
-            - ../mysql/mysql-bin:/var/lib/mysql/mysql-bin
         restart: always
